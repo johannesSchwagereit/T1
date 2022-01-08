@@ -1,0 +1,29 @@
+Basic Installation
+==================
+
+LINUX or CYGWIN:
+The simplest way to compile this package is:  
+
+1. `cd' to the directory containing the package's source code. 
+2. Type `make' to compile the package.
+     If you have problems with linking, try to change the line
+     beginning with "$(CC) $(LDFLAGS)" to this:
+     $(CC) $(LDFLAGS) -s -o $(TARGET) $(OBJS) /usr/local/lib/libfltk.a
+     (Thanks to Arnd Zapletal (a_zapletal@web.de) for this tip.)
+3. You can remove the program binaries and object files from the
+     source code directory by typing `make clean'.  
+
+'make' does not create or copy any files to directories except the
+current directory.
+
+The program, named T1, can be executed in any directory.
+
+All other files (*.cpp, *.h, *.o) can be removed after a successful
+compile, but don't have to.
+
+In case of compile errors: Check the 'Technical details' in README.
+
+Microsoft VISUAL C++:
+1. Install fltk (see fltk-Documentation)
+2. Set up new project in Visual C++ as described in fltk-Documentation
+

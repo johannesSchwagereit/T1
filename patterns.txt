@@ -1,0 +1,187 @@
+#############################################
+# T1: Patterns used to analyze twixt-boards
+# copyright: (C) 2004 by Johannes Schwagereit
+# email    : mail@johannes-schwagereit.de
+#############################################
+
+# a
+D
+E 1 0
+E -1 0
+B 1 0 0 2
+B -1 0 0 2
+S 0 2
+
+# b
+D
+E -1 2
+B -1 2 1 1
+S 1 1
+
+# c
+D
+E 1 2
+B 1 2 -1 1
+S -1 1
+
+# d
+D
+E -1 0
+B -1 0 1 1
+S 1 1
+
+# e
+D
+E 1 0
+B 1 0 -1 1
+S -1 1
+
+# f
+D
+E 1 1
+B -1 0 1 1
+S -1 0
+
+# g
+D
+E -1 1
+B 1 0 -1 1
+S 1 0
+
+# h
+D
+S 0 4 # wird als erstes getestet wg. performance
+F 1 4 
+F -1 4
+F 0 1
+F 1 1
+F -1 1
+F 0 2
+F 1 2
+F -1 2
+F 0 3
+F 1 3
+F -1 3
+
+# i
+D
+E 0 4 # wird als erstes getestet wg. performance
+S 1 2
+B 0 4 1 2
+F 0 1
+F 1 1
+F -1 1
+F 0 2
+F -1 2
+F 0 3
+F 1 3
+F -1 3
+
+# j
+D
+E 0 4 # wird als erstes getestet wg. performance
+F 1 2
+S -1 2
+B 0 4 -1 2
+F 0 1
+F 1 1
+F -1 1
+F 0 2
+F 0 3
+F 1 3
+F -1 3
+
+#k
+D
+E 2 0
+E -2 0
+B 2 0 0 1
+B -2 0 0 1
+S 0 1
+
+#l
+D
+E 2 0
+E -1 -1
+B 2 0 0 1
+B -1 -1 0 1
+S 0 1
+
+#m
+D
+E -2 0
+E 1 -1
+B -2 0 0 1
+B 1 -1 0 1
+S 0 1
+
+
+O
+R 4 0
+B 0 0 -1 2
+S -1 2      # und -1 2 nicht vergessen
+
+O
+R 4 0
+S 1 2      # symmetrisch
+B 0 0 1 2
+
+
+O
+R 3 0
+B 0 0 -1 2
+S -1 2      # und -1 2 nicht vergessen
+
+O
+R 3 0
+S 1 2      # symmetrisch
+B 0 0 1 2
+
+O
+G 1 1
+V 1 1 -1 2
+B 0 0 2 1
+S 2 1
+
+O
+G -1 1
+V -1 1 1 2
+B 0 0 -2 1
+S -2 1
+
+O
+E 0 2
+B 0 0 -2 1
+B -2 1 0 2
+S -2 1
+
+O
+E 0 2
+B 0 0 2 1
+B 2 1 0 2
+S 2 1
+
+O
+E 0 4
+B 0 0 -1 2
+B -1 2 0 4
+S -1 2
+
+O
+E 0 4
+B 0 0 1 2
+B 1 2 0 4
+S 1 2
+
+O
+E 1 3
+B 0 0 2 1
+B 2 1 1 3
+S 2 1
+
+O
+E -1 3
+B  0 0 -2 1
+B -2 1 -1 3
+S -2 1
+
